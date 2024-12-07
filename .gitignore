@@ -3,3 +3,5 @@ Maps_api.py
 worldcities.csv
 streetview_103.jpg
 *.jpg
+__pycache__/streetview_api.cpython-310.pyc
+france.json
