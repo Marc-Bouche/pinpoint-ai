@@ -5,3 +5,6 @@ streetview_103.jpg
 *.jpg
 __pycache__/streetview_api.cpython-310.pyc
 france.json
+*.jpeg
+streetview_api.cpython-310.pyc
+streetview_api.py
