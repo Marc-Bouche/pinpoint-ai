@@ -9,3 +9,4 @@ france.json
 streetview_api.cpython-310.pyc
 streetview_api.py
 *.csv
+best_model.pth
