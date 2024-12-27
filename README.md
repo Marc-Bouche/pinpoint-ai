@@ -19,19 +19,17 @@ PinpointAI is a machine learning project that uses computer vision to predict a 
 
 ### 1. Collect Data
 - **Data Source**: Use Google Street View API or other similar datasets to gather labeled images of various locations worldwide.
-- **Labels**: Each image must be labeled with its GPS coordinates or a region-specific identifier (e.g., city, country).
-- **Data Diversity**: Ensure data includes diverse environments (urban, rural, mountainous, coastal, etc.) and conditions (weather, time of day).
+- **Labels**: Each image must be labeled with its GPS coordinates.
+- **Data Diversity**: Data includes diverse environments (urban, rural, mountainous, coastal, etc.) and conditions (weather, time of day).
 
 ### 2. Preprocessing
 - **Image Preprocessing**: Resize, normalize, and augment images (rotation, cropping, brightness adjustment) to ensure robustness.
-- **Geographical Binning**: Group locations into regions if exact coordinates aren't required. For example, you could use country or city labels instead of GPS points.
 
 ### 3. Model Design
-- **Base Model**: Use a pre-trained Convolutional Neural Network (CNN) like ResNet, EfficientNet, or Vision Transformers (ViT) for feature extraction.
+- **Base Model**: Used a pre-trained Convolutional Neural Network (CNN): ResNet feature extraction.
 - **Custom Layers**: Add fully connected layers to map features to location predictions.
 - **Loss Function**:
-  - For classification (predicting regions): Use cross-entropy loss.
-  - For regression (predicting GPS coordinates): Use mean squared error or a custom geospatial distance loss.
+  - Regression (predicting GPS coordinates): Use mean squared error or a custom geospatial distance loss.
 
 ### 4. Training
 - **Transfer Learning**: Fine-tune a pre-trained model on your dataset to save training time and improve performance.
